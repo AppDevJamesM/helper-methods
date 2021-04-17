@@ -39,7 +39,7 @@
   <% @list_of_movies.each do |a_movie| %>
   <tr>
     <td>
-      <%= a_movie.id %>
+      <%= a_movie %>
     </td>
 
     <td>
@@ -58,7 +58,7 @@
     </td>
 
     <td>
-      <a href="/movies/<%= a_movie.id %>">
+      <a href="<%= movie_path(a_movie) %>">
         Show details
       </a>
     </td>
